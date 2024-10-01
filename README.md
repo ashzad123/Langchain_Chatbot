@@ -18,3 +18,27 @@ Ensure you have the following installed on your machine:
 - Ollama
 - dotenv (for environment variable management)
 
+### Installation
+1. **Clone the Repository**:
+    ```bash
+    git clone https://github.com/ashzad123/Langchain_Chatbot.git
+    cd langchain_Chatbot
+    ```
+
+2. **Install Dependencies**:
+    Use `pip` to install the required packages:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. **Environment Variables**:
+    Create a `.env` file in the project root to store your LangChain API key:
+    ```bash
+    touch .env
+    ```
+
+4. **Add your LangChain API Key**:
+    Inside your `.env` file, add the following:
+    ```bash
+    LANGCHAIN_API_KEY=your-langchain-api-key
+    ```
