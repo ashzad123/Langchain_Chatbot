@@ -42,3 +42,23 @@ Ensure you have the following installed on your machine:
     ```bash
     LANGCHAIN_API_KEY=your-langchain-api-key
     ```
+
+### Running the App
+1. To run the Streamlit app, use the following command:
+    ```bash
+    streamlit run app.py
+    ```
+
+2. Open your browser and go to `http://localhost:8501/` to interact with the chatbot.
+
+## Environment Variables
+This project uses environment variables to manage API keys securely. You need to define the following variables in your `.env` file:
+
+- **LANGCHAIN_API_KEY**: Your API key for LangChain.
+
+
+# How It Works
+1. **User Input**: The user types a question into the input field provided by Streamlit.
+2. **Prompt Creation**: A prompt template is generated using the `ChatPromptTemplate` class from LangChain, which includes a system message and the user’s question.
+3. **Model Invocation**: The prompt is passed to the Llama2 model through the `Ollama` integration, and the model generates a response.
+4. **Response Parsing**: The response is parsed using `StrOutputParser` and displayed back to the user in the Streamlit interface.
