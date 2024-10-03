@@ -62,3 +62,32 @@ This project uses environment variables to manage API keys securely. You need to
 2. **Prompt Creation**: A prompt template is generated using the `ChatPromptTemplate` class from LangChain, which includes a system message and the user’s question.
 3. **Model Invocation**: The prompt is passed to the Llama2 model through the `Ollama` integration, and the model generates a response.
 4. **Response Parsing**: The response is parsed using `StrOutputParser` and displayed back to the user in the Streamlit interface.
+
+## How It Works
+1. **User Input**: The user types a question into the input field provided by Streamlit.
+2. **Prompt Creation**: A prompt template is generated using the `ChatPromptTemplate` class from LangChain, which includes a system message and the user’s question.
+3. **Model Invocation**: The prompt is passed to the Llama2 model through the `Ollama` integration, and the model generates a response.
+4. **Response Parsing**: The response is parsed using `StrOutputParser` and displayed back to the user in the Streamlit interface.
+
+## Documentation Links
+- [LangChain Documentation](https://docs.langchain.com)
+- [Ollama Documentation](https://www.ollama.com/docs)
+- [Streamlit Documentation](https://docs.streamlit.io)
+- [LangSmith Tracing Documentation](https://docs.smith.langchain.com)
+
+## Technologies Used
+- **LangChain**: A framework for building applications with language models.
+- **Llama2**: A state-of-the-art language model provided by Ollama.
+- **Streamlit**: A Python library used to build interactive web applications.
+- **dotenv**: For managing environment variables.
+- **LangSmith**: For tracing and logging interactions in LangChain.
+
+
+## Contributing
+If you'd like to contribute to this project, feel free to fork the repository, make changes, and submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
+
+1. Fork the repository.
+2. Create a new branch for your feature (`git checkout -b feature/YourFeature`).
+3. Commit your changes (`git commit -m 'Add YourFeature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a pull request.
